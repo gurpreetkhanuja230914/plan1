@@ -71,3 +71,17 @@ isalpha()
 istitle()
 islower()
 isspace()
+whenever we are using a module in our program, for that module compiled file will be
+generated and stored in the hard disk permanently
+Any folder or directory contains __init__.py file,is considered as a Python package.This file
+can be empty.
+conda can install non-Python libraries and tools you may need (e.g. compilers, CUDA, HDF5), while pip can't
+conda is a system package manager. pip is a Python package manager.
+pypi python package index PyPI helps you find and install software developed and shared by the Python community
+\s  Space character
+\S  Any character except space character
+\d  Any digit from 0 to 9
+\D  Any character except digit
+\w  Any word character [a-zA-Z0-9]
+\W  Any character except word character (Special Characters)
+.  Any character including special characters
