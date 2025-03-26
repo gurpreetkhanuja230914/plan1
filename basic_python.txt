@@ -14,3 +14,60 @@ for conversion in integer
 1. We can convert any type value to float type except complex type.
 2. Whenever we are trying to convert str type to float type compulsary str should be
 either integral or floating point literal and should be specified only in base-10.
+we can add and remove update items in set but in the frozen set the set is immutable and we cannot update it 
+1. In general we can use bytes and bytearray data types to represent binary information
+like images,video files etc
+2. In Python2 long data type is available. But in Python3 it is not available and we can
+represent long values also by using int type only.
+3. In Python there is no char data type. Hence we can represent char values also by using
+str type.
+immutatble data types are - str,int,float ,bytes,complex,bool,range,tuple,frozonset
+mutable datatype are- bytearray,list ,set,dict
+\n==>New Line
+\t===>Horizontal tab
+\r ==>Carriage Return
+\b===>Back space
+\f===>Form Feed
+\v==>Vertical tab
+\'===>Single quote
+\"===>Double quote
+\\===>back slash symbol
+Bitwise Operators:
+We can apply these operators bitwise.
+These operators are applicable only for int and boolean types
+The most significant bit acts as sign bit. 0 value represents +ve number where as 1
+represents -ve value.
+positive numbers will be repesented directly in the memory where as -ve numbers will be
+represented indirectly in 2's complement form.
+ternary operator 
+x=30 if 10<20 else 40 
+left shift and right shift is done by bit itself 
+identity operator is ,is not - used for address comparison
+true if both refeerences are pointing to the same memory block 
+membership operator if we want to check weather one element is present or not in tuple ,list or any other data structure 
+eval Function take a String and evaluate the Result.
+Eg: x = eval(“10+20+30”)
+print(x)
+Output: 60
+%i====>int
+%d====>int
+%f=====>float
+%s======>String type
+del(x)
+We can delete variables which are pointing to immutable objects.But we cannot delete
+the elements present inside immutable object.
+1. rstrip()===>To remove spaces at right hand side
+2. lstrip()===>To remove spaces at left hand side
+3. strip() ==>To remove spaces both sides
+s.find(substring)
+s.rfind(substring) index from the last first occureence reverse string 
+index() method is same as find() except it gives val
+# it will count the substring occurence and also it will take second and third arguement as a strating and end index print(s.count('a',3,7)) 
+replace method to replace a substring with another string but as string are immutable new objects are created instead 
+upper ,lower ,swapcase, capitalize(only first element of complete statement is capitalize) ,title(all the words first element capitalze) ,
+starts_with(),end_with(),
+isalnum()
+isalpha()
+istitle()
+islower()
+isspace()
