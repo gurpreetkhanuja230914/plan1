@@ -47,6 +47,30 @@ class linked_list:
             temp.next=None 
         elif temp == None:
             self.start=None
+    def search(self,data):
+        temp=self.start
+        while(temp.next !=None):
+            if temp.data == data:
+                print(True)
+                return 
+            temp=temp.next
+        print(False)
+    def length(self):
+        temp=self.start
+        count=0
+        while temp.next is not None:
+            count+=1
+            temp=temp.next
+        print("length is ",count)
+    # def reverse(self):
+    #     temp=self.start
+    #     while temp.next !=None:
+    #         store=temp.next
+    #         store.next=temp
+    #         temp=store
+    #         store=None
+    #         temp=temp.next
+
             
         
 
@@ -62,9 +86,12 @@ my_list.remove(7)
 my_list.remove_start()
 my_list.remove_last()
 my_list.add_at_last(10)
+my_list.length()
 
+my_list.remove_last()
 my_list.print_list()
-
+# my_list.reverse()
+my_list.print_list()
 
 
 
