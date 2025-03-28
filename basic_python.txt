@@ -25,9 +25,9 @@ immutatble data types are - str,int,float ,bytes,complex,bool,range,tuple,frozon
 mutable datatype are- bytearray,list ,set,dict
 \n==>New Line
 \t===>Horizontal tab
-\r ==>Carriage Return
+\r ==>Carriage Return return the cursor at the begining of the line 
 \b===>Back space
-\f===>Form Feed
+\f===>Form Feed advances the cursor to the next logical page 
 \v==>Vertical tab
 \'===>Single quote
 \"===>Double quote
@@ -40,7 +40,7 @@ represents -ve value.
 positive numbers will be repesented directly in the memory where as -ve numbers will be
 represented indirectly in 2's complement form.
 ternary operator 
-x=30 if 10<20 else 40 
+x=30 if 10<20 else 40  conditional checks and assign value 
 left shift and right shift is done by bit itself 
 identity operator is ,is not - used for address comparison
 true if both refeerences are pointing to the same memory block 
