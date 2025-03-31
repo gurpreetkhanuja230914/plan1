@@ -1,0 +1,3 @@
+cd change directory ls list all files -a all -l long list format chmod change the permission of the files 
+read write execute 
+ minute hour day month 

@@ -1,0 +1,28 @@
+no sql support large volume of data and its flexible nature support both
+the type of data to be store that is nosql(real time analytics) and sql 
+psql supprot two data types json and jsonb jsonb is more faster as data is already converted in 
+json it also support indexing in jsonb through GIN generalized inverted index 
+hstore is basically to store semi structured data as key value pair and sinlge data too but the json will store everthing as key value pair 
+domain is created basically to check one attribute constraints 
+create type is used to make a composite type and then we insert in it like a row(1,"ghdh","dhdhj) 
+values of one column .
+In PostgreSQL, an enum type is a custom data type that allows you to define a list of possible values for a column.
+in enum we select any one from them and in type we can create a more then one attribute 
+In PostgreSQL, an array of a collection of elements that have the same data type.
+CREATE TABLE contacts (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR (100),
+  phones TEXT []
+);
+Feature	             JSON	                                                    JSONB
+Storage	      Textual representation (verbatim)	                              Binary storage format
+Size	      Typically larger it retains the whitespace in JSON data	   Typically smaller
+Indexing	     Full-text search indexes	                                  Binary indexes
+Performance	      Slightly slower	                                           Generally faster
+Query performance	Slower due to parsing	                             Faster due to binary storage
+Parsing	                Parse each time	                        Parse once, store in binary format
+Data manipulation	           Simple and easy	                       More complex
+Ordering of keys	Preserved	Not preserved
+Duplicate keys	   Allow duplicate key, the last value is retained	   Do not allow duplicate keys.
+Use cases	Storing configuration data, log data, simple JSON documents 	Storing JSON documents where fast querying and indexing are required
+
