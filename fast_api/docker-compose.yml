@@ -1,0 +1,30 @@
+version: "3.9" # compose file format version 
+services:
+  backend:
+    build: . # go inside current directory and build the image from DockerFile user dockerfile: if name is different 
+    container_name: fastapi-backend
+    ports:
+      - "8000:8000" # maps the port 8000 of my machine with container 8000 port  lhs my machine port rhs container port 
+    depends_on:
+      - db
+    volumes:
+      - .:/app
+
+  db:
+    image: postgres:15
+    container_name: postgres-db
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+
+  
+
+    
